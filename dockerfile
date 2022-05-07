@@ -6,4 +6,8 @@ RUN apt-get update && apt-get -y install \
 RUN wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
 RUN unzip ngrok-stable-linux-amd64.zip
 RUN mv ./ngrok /usr/bin/ngrok
-RUN mkdir mcserverlauncher-ngrok && mcserverlauncher-ngrok
+RUN git clone https://github.com/vihaan-s1ngla/mcserverlauncher-ngrok.git
+RUN apt -y install python3-pip
+WORKDIR "mcserverlauncher-ngrok"
+RUN pip install -r requirements.txt
+CMD ["python3", "main.py"]

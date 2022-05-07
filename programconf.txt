@@ -1,0 +1,5 @@
+Path To Minecraft Server: 
+/Users/vihaansingla/Desktop/mc-server/start.command
+
+Discord Webhook: 
+https://discord.com/api/webhooks/940131907277058089/p8ITjGOShkg4yoo45UobrpxDBbW0i9n3DVkYkx46KauAn6RJBSYwt_3hWzlZgnXsTyr4

@@ -7,9 +7,12 @@ import subprocess
 from pathlib import Path
 import time
 import shutil
-from installation import *
 
 #Methods
+def ngrokauthtoken():
+        authtoken = input("Please input your ngrok AUTHTOKEN: ")
+        os.system("ngrok authtoken " + authtoken)
+
 def firstTimeChecker():
     path_to_file = 'programconf.txt'
     path = Path(path_to_file)
@@ -19,7 +22,7 @@ def firstTimeChecker():
         info()
         print("PLEASE INPUT REQUIRED DATA!")
         time.sleep(1)
-        installngrok()
+        ngrokauthtoken()
         editconf_noquit()
         startoverallserver()
 

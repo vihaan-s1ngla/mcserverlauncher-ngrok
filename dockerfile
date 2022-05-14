@@ -10,4 +10,4 @@ RUN git clone https://github.com/vihaan-s1ngla/mcserverlauncher-ngrok.git
 RUN apt -y install python3-pip
 WORKDIR "mcserverlauncher-ngrok"
 RUN pip install -r requirements.txt
-CMD ["python3", "main.py"]
+CMD ["python3", "./main.py"]

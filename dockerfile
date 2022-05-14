@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM fedora:36
 FROM python:3
 
 RUN apt-get update && apt-get -y install \
